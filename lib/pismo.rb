@@ -19,7 +19,7 @@ require 'pismo/utilities'
 
 
 if RUBY_PLATFORM == "java"
-  class String; def stem; self; end; end
+  require 'jruby-stemmer'
 else
   require 'fast_stemmer'
 end
